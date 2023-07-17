@@ -1,0 +1,10 @@
+include ./header.pug
+
+form(method="post" role="form")
+  .form-group
+    label Title
+    input#title.form-control(type='text' placeholder='Enter title', name="title")
+  .form-group
+    label Entry text
+    textarea#body.form-control(rows='3', name="body")
+  button.btn.btn-primary(type='submit') Post entry
